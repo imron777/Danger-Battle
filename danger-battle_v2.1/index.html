@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danger-Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hide__overflow">
+        <div class="chooseCharacter">
+            <div class="container">
+                <div class="title">Добро пожаловать в DANGER BATTLE!</div>
+            </div>
+            <br>
+            <div class="chooseCharacter__content">
+                <p>Выберите пожалуйста героя за которого хотите играть:</p> <br>
+                <div><a class="chooseCharacter__first" href="#">Danger!</a>: <p> Имеет на 25% больше здоровья</p></div> <br>
+                <div><a class="chooseCharacter__second" href="#">Biker!</a>: <p> Имеет на 20% больше урона</p></div> <br>
+                <div><a class="chooseCharacter__third" href="#">Ninja!</a>: <p> Имеет на 8% больше урона и на 10% больше здоровья</p></div>
+            </div>
+        </div>
+
+    <div class="mainContent">
+        <header>
+            <div class="container-title">
+                
+            </div>
+        </header>
+        
+        <div class="content">
+
+            <div class="help">
+                <div class="help__close">
+                    <span data-close class="help__close__item">&times;</span>
+                </div>
+                <div class="help__content">
+                    1. Ваш персонаж ВСЕГДА находится слева <br>
+                    2. При клике на кнопку 'BEAT HIM!' рандом сам решает кто сколько урона нанесёт <br>
+                    3. При клике на крестик данное окно закроется
+                </div>
+            </div>
+
+            <div class="container-900 flex-container">
+
+                <div class="selectedCharacter__item">
+
+                </div>
+
+                <div class="btn">
+                    <a data-sound='sounds/punch' class="btn__link loud-link-click" href="#">BEAT HIM!</a>
+                </div>
+    
+                <div class="randomCharacter__item">
+                    
+                </div>
+            </div>
+
+            <div class="gameOver hide">
+                <div class="gameOver__loose"></div>
+                <img class="game-over-img" src="img/game-over.jpg" alt="game over">
+                <button class="reload-btn">Начать заново &#9658;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/loudlinks.min.js"></script>
+</body>
+</html>
