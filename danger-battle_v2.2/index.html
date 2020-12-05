@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Danger-Battle</title>
+    <link rel="shortcut icon" href="img/gameIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body class="body">
+    <div class="chooseCharacter">
+        <div class="container">
+            <div class="title">Добро пожаловать в DANGER BATTLE!</div>
+            <br>
+            <div class="chooseCharacter__content">
+                <div class="chooseCharacter__blockAim"><span class="chooseCharacter__aim">Цель:</span> Сделать так чтобы у соперника не осталось жизней <hr class="chooseCharacter__hr"> <p>У каждого героя есть определённое количество здоровья и иммунитета, Следовательно чем меньше иммунитета у героя тем больше урона он будет получать</p></div> <br>
+                
+                <p class="chooseCharacter__choosing">Выберите пожалуйста героя за которого хотите играть:</p>
+                <div><a class="chooseCharacter__first" href="#">Danger!</a>: <p>Имеет на 30% больше здоровья, Но на 20% меньше иммунитета</p></div> <br>
+                <div><a class="chooseCharacter__second" href="#">Biker!</a>: <p>Имеет 10% больше иммунитета</p></div> <br>
+                <div><a class="chooseCharacter__third" href="#">Ninja!</a>: <p>Имеет на 10% больше здоровья, Но на 8% меньше иммунитета</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainContent">
+            <header>
+                <div class="container-fluid">
+                    <div class="help col-12">
+                        <div class="help__close">
+                            <span data-close class="help__close__item">&times;</span>
+                        </div>
+                        <div class="help__content">
+                            1. Ваш персонаж ВСЕГДА находится слева <br>
+                            2. При клике на кнопку "BEAT HIM!" рандом сам решает кто сколько урона нанесёт
+                        </div>
+                    </div>
+
+                    <div class="container-title">
+                        
+                    </div>
+                </div>
+            </header>
+        
+            <div class="content">
+                <div class="container charactersContainer">
+                    <div class="row d-flex justify-content-between">
+                        <div class="selectedCharacter__item">
+
+                        </div>
+    
+                        <div class="btn">
+                            <btn data-sound='sounds/punch' class="btn__link loud-link-click col-2" href="#">BEAT HIM!</btn>
+                        </div>
+            
+                        <div class="randomCharacter__item">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gameOver hide">
+                    <div class="gameOver__loose"></div>
+                    <button class="reload-btn">Начать заново &#9658;</button>
+                </div>
+            </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/loudlinks.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
