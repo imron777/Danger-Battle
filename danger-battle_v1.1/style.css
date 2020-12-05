@@ -1,0 +1,206 @@
+*, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+.show__overflow {
+    overflow: visible;
+}
+.hide__overflow {
+    overflow: hidden;
+}
+.mainContent {
+    background: url("img/asus.jpg") no-repeat center;
+    background-size: cover;
+    padding: 60px 0;
+}
+.content {
+    position: relative;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.container-900 {
+    width: 900px;
+    margin: 0 auto; 
+}
+.title {
+    font-size: 32px;
+    text-align: center;
+    color: #2df00f;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 159px;
+    padding-top: 200px;
+}
+.character__img {
+    width: 150px;
+    height: 170px;
+}
+.character__img:hover {
+    border: 2px solid #333;
+}
+.character__title {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+.btn__link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #1d0880;
+    transition: background .3s linear, color .3s linear;
+    border: 4px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background:#2df00f;
+}
+.btn__link:hover {
+    color: red;
+    background: black;
+}
+.btn {
+    margin-top: 160px;
+}
+.modalWindowLeft {
+    position: absolute;
+    border: 5px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+    color: aqua;
+    background: #333;
+    top: 210px;
+    left: 530px;
+}
+.modalWindowLeft:before {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: -24px; bottom: 28px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-right: 10px solid #333; /* Добавляем треугольник */
+}
+
+
+.modalWindowRight {
+    position: absolute;
+    border: 5px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+    color: aqua;
+    background: #333;
+    top: 210px;
+    right: 530px;
+}
+.modalWindowRight:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: -24px; bottom: 28px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-left: 10px solid #333; /* Добавляем треугольник */
+}
+.hide{
+    display:none;
+}
+.show {
+    display: block;
+}
+
+.life__item {
+    font-size: 25px;
+    text-align: center;
+    color: #ff1414;
+}
+.life {
+    width: 25px;
+    height: auto;
+}
+
+/* game over */
+.gameOver {
+    width: 900px;
+    height: 450px;
+    background: #f7f7f7;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -600px;
+    z-index: 1000;
+    overflow: hidden;
+}
+.game-over-img {
+    width: 900px;
+    height: 450px;
+}
+.reload-btn {
+    position: absolute;
+    top: 370px;
+    left: 390px;
+    padding: 10px;
+    background: black;
+    color: green;
+    border: 1px solid black;
+}
+.reload-btn:hover {
+    cursor: pointer;
+}
+.gameOver__loose {
+    position: absolute;
+    top: 320px;
+    left: 380px;
+    font-size: 20px;
+    color: red;
+}
+
+/* help for users */
+.help {
+    font-size: 20px;
+    color: rgb(0, 255, 255);
+    position: absolute;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: -100px;
+}   
+.help__close {
+    text-align: right;
+    margin-right: 20px;
+}
+.help__close__item {
+    font-size: 30px;
+    font-family: serif;
+}
+.help__close__item:hover {
+    cursor: pointer;
+}
+.chooseCharacter {
+    background: #333;
+    color: #f7f7f7;
+    padding: 30px;
+    position: relative;
+    width: 1536px;
+    height: 790px;
+    z-index: 1050;
+    margin: 0 auto;
+}
+.chooseCharacter__content {
+    position: relative;
+    width: 600px;
+    height: auto;
+    font-size: 25px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+.chooseCharacter__content a {
+    text-decoration: none;
+    color: rgb(76, 0, 255);
+}
+.chooseCharacter__content a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-marathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hide__overflow">
+    <div class="chooseCharacter">
+        <div class="container">
+            <div class="title">Добро пожаловать в DANGER BATTLE!</div>
+        </div>
+        <div class="chooseCharacter__content">
+            <p>Выберите пожалуйста героя за которого хотите играть:</p> <br>
+            <p><a class="chooseCharacter__first" href="#">Опасный!</a></p> <br>
+            <p><a class="chooseCharacter__second" href="#">Острый!</a></p>
+        </div>
+    </div>
+
+    <div class="mainContent">
+        <header>
+            <div class="container-title">
+                
+            </div>
+        </header>
+        
+        <div class="content">
+
+            <div class="help">
+                <div data-close class="help__close">
+                    <span class="help__close__item">&times;</span>
+                </div>
+                <div class="help__content">
+                    1. При клике на персонажа появляется дополнительное окно <br>
+                    2. При клике на кнопку 'BEAT HIM!' рандом сам решает кто ударит <br>
+                    3. При клике на крестик данное окно закроется
+                </div>
+            </div>
+
+            <div class="container-900 flex-container">
+
+                <div class="character__item">
+                    <div class="leftCharactersLife life__item">
+                        <span class="lifeCountLeft">100</span>
+                        <img class="leftCharactersLife__img life" src="img/life.png" alt="leftCharactersLife">
+                    </div>
+    
+                    <a href="#"><img class="character__img" src="img/leftPerson.jpg" alt="leftCharacter"></a>
+                    <div class="footer">
+                        <div class="character__title">Опасный!</div>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <a data-sound='punch' class="btn__link loud-link-click" href="#">BEAT HIM!</a>
+                </div>
+    
+                <div class="character__item">
+                    <div class="rightCharactersLife life__item">
+                        <span class="lifeCountRight">100</span>
+                        <img class="rightCharactersLife__img life" src="img/life.png" alt="rightCharactersLife">
+                    </div>
+    
+                    <a href="#"><img class="character__img" src="img/rightPerson.jpg" alt="rightCharacter"></a>
+                    <div class="footer">
+                        <div class="character__title">Острый!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modalWindowLeft hide">Я тебя сейчас морально уничтожу!</div>
+            <div class="modalWindowRight hide">Я тебя сейчас насажу на свой меч!</div>
+
+            <div class="gameOver hide">
+                <div class="gameOver__loose"></div>
+                <img class="game-over-img" src="img/game-over.jpg" alt="game over">
+                <button class="reload-btn">Начать заново &#9658;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="loudlinks.min.js"></script>
+</body>
+</html>
