@@ -1,0 +1,152 @@
+*, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+.body {
+    background: #2C0929;
+}
+.mainContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.content {
+    position: relative;
+}
+.title {
+    font-size: 2em;
+    text-align: center;
+    color: #2df00f;
+}
+.character__img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.character__title {
+    color: red;
+    font-size: 1.250em;
+    text-align: center;
+}
+.btn__link {
+    text-decoration: none;
+    font-size: 1.375em;
+    color: #1d0880;
+    transition: background .3s linear, color .3s linear;
+    border: 4px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background:#2df00f;
+}
+.btn__link:hover {
+    color: red;
+    background: black;
+}
+.btn {
+    display: block;
+    margin: 20px auto;
+}
+
+.hide{
+    display:none;
+}
+.show {
+    display: block;
+}
+
+.life__item {
+    font-size: 1.563em;
+    text-align: center;
+    color: #ff1414;
+}
+.life {
+    width: 25px;
+    height: auto;
+}
+
+/* game over */
+.gameOver {
+    max-width: 900px;
+    height: 450px;
+    min-height: 250px;
+    background: url(../img/game-over.jpg) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; 
+    z-index: 1000;
+    overflow: hidden;
+}
+.reload-btn {
+    padding: 10px;
+    background: black;
+    color: green;
+    border: 1px solid black;
+}
+.reload-btn:hover {
+    cursor: pointer;
+}
+.gameOver__loose {
+    font-size: 1.250em;
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* help for users */
+.help {
+    font-size: 1.063em;
+    color: rgb(0, 255, 255);
+}   
+.help__close {
+    text-align: left;
+    margin-right: 20px;
+}
+.help__close__item {
+    font-size: 1.875em;
+    font-family: serif;
+}
+.help__close__item:hover {
+    cursor: pointer;
+}
+.chooseCharacter {
+    color: #f7f7f7;
+    padding: 30px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.chooseCharacter__content {
+    position: relative;
+    height: 100%;
+    font-size: 1.563em;
+    margin: 0 auto;
+    text-align: center;
+}
+.chooseCharacter__content a {
+    text-decoration: none;
+    color: rgb(76, 0, 255);
+}
+.chooseCharacter__content a:hover {
+    text-decoration: underline;
+}
+.chooseCharacter__blockAim {
+    text-align: left;
+    width: 85%;
+}
+.chooseCharacter__aim {
+    color: red;
+}
+.chooseCharacter__hr {
+    background: aqua
+}
+.chooseCharacter__choosing {
+    color: aqua;
+}
