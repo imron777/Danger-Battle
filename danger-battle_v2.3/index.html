@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Danger-Battle</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css'>
+</head>
+
+<body class="body">
+
+    <audio loop class="backgroundMusic__menu" src="sounds/backgroundMusic__menu.mp3"></audio>
+    <audio loop class="backgroundMusic__fighting" src="sounds/backgroundMusic__fighting.mp3"></audio>
+    <!-- спросить почему не работает filter glow -->
+    <div class="askUser">
+        <p class="askUserSound turnOn" title="Выключить звук"><img src="img/soundOn.png" alt="" class="askUserImg"></p>
+        <p class="askUserSound turnOff hide" title="Включить звук"><img src="img/soundOff.png" alt="" class="askUserImg"></p>
+    </div>
+
+    <div class="backgroundMusic">
+        <p class="backgroundMusic__element backgroundMusic__on hide" title="Выключить фоновую музыку"><img class="backgroundMusic__img" src="img/onBackgroundMusic.jpg" alt=""></p>
+        <p class="backgroundMusic__element backgroundMusic__off" title="Включить фоновую музыку"><img class="backgroundMusic__img" src="img/offBackgroundMusic.jpg" alt=""></p>
+    </div>
+
+    <div class="warning hide alert alert-danger" role="alert">
+        <button type="button" class="close closeTheWarning" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        Внимание! Из-за того что вы просматриваете данный сайт со смартфона либо планшета некоторые функции могут работать не
+        корректно
+    </div>
+
+    <p class="helpingText">Чтобы включить фоновую музыку кликните на <img width='20' src="img/offBackgroundMusic.jpg" alt=""></p>
+
+    <!-- choose character -->
+    <div class="chooseCharacter">
+        <h1 class="title chooseCharacter__title">
+            <span class="letter">D</span>
+            <span class="letter">A</span>
+            <span class="letter">N</span>
+            <span class="letter">G</span>
+            <span class="letter">E</span>
+            <span class="letter">R</span>
+            <div class="animation"></div>
+            <span class="letter">B</span>
+            <span class="letter">A</span>
+            <span class="letter">T</span>
+            <span class="letter">L</span>
+            <span class="letter">L</span>
+            <span class="letter">E</span>
+        </h1>
+        <br>
+        <div class="chooseCharacter__content">
+            <div class="chooseCharacter__blockAim">
+                <div class="container">
+                    <span class="chooseCharacter__aim gagalin">Цель</span>: Сделать так чтобы у соперника не осталось
+                    жизней
+                </div> <!-- /.container -->
+                <hr class="chooseCharacter__hr">
+                <div class="containerForImprovement">
+                    <p>У каждого героя есть определённое количество здоровья и иммунитета, Следовательно чем меньше
+                        иммунитета у героя тем больше урона он будет получать</p>
+                </div> <!-- /.container -->
+            </div> <br>
+
+            <div><span class="chooseCharacter__choosing gagalin">Выберите героя за которого хотите
+                    играть</span>:</div> <br>
+            <!-- <div><a class="chooseCharacter__first gagalin" href="#">Danger!</a>: <p>Имеет на 30% больше здоровья, Но на 20% меньше иммунитета</p></div> <br>-->
+            <div><a class="chooseCharacter__first gagalin" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Danger!
+                </a>
+                <p id='firstCharacter__text'>Имеет на 30% больше здоровья, Но на 20% меньше иммунитета</p>
+            </div> <br>
+            <div><a class="chooseCharacter__second gagalin" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Biker!
+                </a>
+                <p>Имеет на 10% больше иммунитета</p>
+            </div> <br>
+            <div><a class="chooseCharacter__third gagalin" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ninja!
+                </a>
+                <p>Имеет на 10% больше здоровья, Но на 8% меньше иммунитета</p>
+            </div>
+        </div>
+
+        <!-- adiitionalEffect -->
+        <!-- <div class="additionalEffect">
+            <p class="additionalEffect__blockBtn">
+                <a class="btn" id="additionalEffect__btn" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Дополнительный эффект
+                </a>
+            </p>
+            <div class="collapse more" id="collapseExample">
+                <div class="wrapper" id="more">
+                    <div class="main">
+                        <h1 class="main__title">Created by Imron</h1>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="wrapper1">
+			<!-- Контент -->
+			<a href="#more" class="wave-btn">
+				<span class="wave-btn__text">Click</span>
+				<span class="wave-btn__waves"></span>
+			</a>
+		</div>
+
+        <div class="wrapper" id="more">
+            <div class="main">
+                <h1 class="main__title">Created by Imron</h1>
+            </div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+
+
+    <!-- main content -->
+    <div class="mainContent">
+        <header>
+            <div class="container-fluid">
+                <div class="back">
+                    <img class="back__button" src="img/back.png" alt="" title="Вернуться назад">
+                </div>
+                <div class="help col-12">
+                    <div class="help__close">
+                        <span title="Закрыть" data-close class="help__close__item">&times;</span>
+                    </div>
+                    <div class="help__content">
+                        1. Снова кнопку можно будет нажать после проигрывания анимаций <br>
+                        2. При клике на кнопку "BEAT HIM!" рандом сам решает кто и сколько урона нанесёт
+                    </div>
+                </div>
+
+                <div class="container-title">
+
+                </div>
+            </div> <!-- /container-fluid -->
+        </header>
+
+        <div class="content">
+            <div class="container charactersContainer">
+                <div class="row d-flex justify-content-between">
+                    <div class="selectedCharacter__item col-md-4">
+
+                    </div>
+
+                    <div class="btn">
+                        <btn data-sound='sounds/punch' class="btn__link loud-link-click col-md-4" href="#"> BEAT HIM!
+                        </btn>
+                    </div>
+
+                    <div class="randomCharacter__item col-md-4">
+
+                    </div>
+                </div>
+            </div> <!-- /container -->
+
+            <div class="gameOver hide">
+                <div class="gameOver__loose"></div>
+                <button class="reload-btn">Начать заново &#9658;</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="changeBackground">
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="green"></div>
+        </div> -->
+
+
+        
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/anime.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/loudlinks.min.js"></script>
+</body>
+
+</html>
